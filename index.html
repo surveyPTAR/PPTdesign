@@ -99,15 +99,15 @@
         function setBounds() {
             map.setMaxBounds(map.getBounds());
         }
-        map.createPane('pane_241009__3m_0');
-        map.getPane('pane_241009__3m_0').style.zIndex = 400;
-        var img_241009_ortho_3m_0 = "https://surveyptar.github.io/241009_Ortho/";
-        var img_bounds_241009_ortho_3m_0 = [[1.4453316847290534,99.03551283703491],[1.5573474656611288,99.09652105325343]];
-        var layer_241009_ortho_3m_0 = new L.imageOverlay(img_241009_ortho_3m_0,
-                                              img_bounds_241009_ortho_3m_0,
-                                              {pane: 'pane_241009_ortho_3m_0'});
-        bounds_group.addLayer(layer_241009_ortho_3m_0);
-        map.addLayer(layer_241009_ortho_3m_0);
+        map.createPane('pane_240911_ortho_3m_0');
+        map.getPane('pane_240911_ortho_3m_0').style.zIndex = 400;
+        var img_240911_ortho_3m_0 = 'data/240911_ortho_3m_0.png';
+        var img_bounds_240911_ortho_3m_0 = [[1.4453316847290534,99.03551283703491],[1.5573474656611288,99.09652105325343]];
+        var layer_240911_ortho_3m_0 = new L.imageOverlay(img_240911_ortho_3m_0,
+                                              img_bounds_240911_ortho_3m_0,
+                                              {pane: 'pane_240911_ortho_3m_0'});
+        bounds_group.addLayer(layer_240911_ortho_3m_0);
+        map.addLayer(layer_240911_ortho_3m_0);
         function pop_20211009_tsf_377_emb_rl_360entities_1(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -529,7 +529,7 @@
             {label: '<img src="legend/Mark_3.png" /> Mark', layer: layer_Mark_3},
             {label: '240506_barani_r31 — entities<br /><table><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_1000.png" /></td><td>100</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_21.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_32.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_43.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_64.png" /></td><td>6</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_75.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_96.png" /></td><td>9</td></tr><tr><td style="text-align: center;"><img src="legend/240506_barani_r31entities_2_7.png" /></td><td></td></tr></table>', layer: layer_240506_barani_r31entities_2},
             {label: '20211009_tsf_377_emb_rl_360 — entities<br /><table><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_21.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_32.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_43.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_54.png" /></td><td>5</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_65.png" /></td><td>6</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_76.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/20211009_tsf_377_emb_rl_360entities_1_7.png" /></td><td></td></tr></table>', layer: layer_20211009_tsf_377_emb_rl_360entities_1},
-            {label: "241009_ortho_3m", layer: layer_241009_ortho_3m_0},]
+            {label: "240911_ortho_3m", layer: layer_240911_ortho_3m_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
