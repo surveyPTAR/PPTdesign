@@ -92,15 +92,11 @@
 				popup._contentNode.classList.remove('media');
 			}
 		}
-        var zoomControl = L.control.zoom({
+ var zoomControl = L.control.zoom({
             position: 'topleft'
         }).addTo(map);
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
-        var bounds_group = new L.featureGroup([]);
-        function setBounds() {
-            map.setMaxBounds(map.getBounds());
-        }
-	var measureControl = new L.Control.Measure({
+        var measureControl = new L.Control.Measure({
             position: 'topleft',
             primaryLengthUnit: 'meters',
             secondaryLengthUnit: 'kilometers',
@@ -112,7 +108,7 @@
         document.getElementsByClassName('leaflet-control-measure-toggle')[0].className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
-        }	
+        }
         map.createPane('pane_240911_ortho_3m_0');
         map.getPane('pane_240911_ortho_3m_0').style.zIndex = 400;
         var img_240911_ortho_3m_0 = 'data/240911_ortho_3m_0.png';
